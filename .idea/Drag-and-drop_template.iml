@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="GENERAL_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="IlluminatedCloud" name="Illuminated Cloud">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/DND-SORTING-TABLE">
+      <sourceFolder url="file://$MODULE_DIR$/DND-SORTING-TABLE/config" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/DND-SORTING-TABLE/force-app" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DND-SORTING-TABLE/manifest" type="java-resource" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,17 @@
+<template>
+    <div class="dnd-container slds-scrollable_y">
+        <table class="slds-table slds-table_cell-buffer slds-table_fixed-layout" role="grid">
+            <tbody>
+                <template for:each={tableRows} for:item="record">
+                    <tr key={record.Id} data-id={record.Id} draggable="true" ondrop={drop} ondragstart={dragStart} ondragend={dragEnd} ondragenter={dragEnter} ondragover={dragOver} ondragleave={dragLeave} onclick={handleRowClick}>
+                        <td class="initial-border" role="gridcell">{record.Name}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+    <div class="slds-clearfix slds-p-top_small">
+        <lightning-button name={cancelButtonName} class="slds-float_left" variant="neutral" label={cancelButtonLabel} onclick={handleAction}></lightning-button>
+        <lightning-button name={saveButtonName} class="slds-float_right" variant="brand" label={saveButtonLabel} onclick={handleAction}></lightning-button>
+    </div>
+</template>
